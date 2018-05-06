@@ -10,5 +10,5 @@ const params = {
 
 $(function(){
 	console.log($('.auth-link'));
-	//$('.auth-link')[0].attr('href') = 'https://id.twitch.tv/oauth2/authorize' + '?' + $.param(params);
+	$('.auth-link').attr('href') = 'https://id.twitch.tv/oauth2/authorize' + '?' + $.param(params);
 });
