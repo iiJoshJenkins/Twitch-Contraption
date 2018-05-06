@@ -7,14 +7,8 @@ const params = {
 	redirect_uri : 'https://iijoshjenkins.github.io/Twitch-Contraption/',
 	scope : 'viewing_activity_read openid channel_subscriptions'
 },
-      url = 'https://id.twitch.tv/oauth2/authorize' + '?' + $.param(params);
+      url = 'https://id.twitch.tv/oauth2/authorize?' + $.param(params);
 
 $(function(){
-	$.ajax({
-		url: url,
-		dataType: 'jsonp',
-		timeout: 5000
-	}).done(function(data){
-		console.log(data);
-	});
+	window.location = url;
 });
