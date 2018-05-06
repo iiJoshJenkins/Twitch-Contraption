@@ -9,8 +9,8 @@ const params = {
 	},
 	url = 'https://id.twitch.tv/oauth2/authorize?' + $.param(params);
 $(function(){
-	if (window.location.includes('token')){
-		console.log(window.location);
+	if (window.location.href.includes('token')){
+		console.log(window.location.href);
 	}else{
 		window.location = url;
 	}
