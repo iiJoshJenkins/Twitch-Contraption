@@ -10,6 +10,6 @@ const params = {
       url = 'https://id.twitch.tv/oauth2/authorize?' + $.param(params);
 
 $(function(){
-	window.location = url;
 	console.log(window);
+	window.location = url;
 });
