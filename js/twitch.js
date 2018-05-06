@@ -11,4 +11,5 @@ const params = {
 
 $(function(){
 	window.location = url;
+	console.log(window);
 });
