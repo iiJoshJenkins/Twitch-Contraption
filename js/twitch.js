@@ -10,6 +10,11 @@ const params = {
       url = 'https://id.twitch.tv/oauth2/authorize' + '?' + $.param(params);
 
 $(function(){
-	console.log($('.auth-link'));
-	$('.auth-link').attr('href', url); 
+	$.ajax({
+		url: url,
+		dataType: 'jsonp',
+		timeout: 5000
+	}).done(function(data){
+		console.log(data);
+	});
 });
