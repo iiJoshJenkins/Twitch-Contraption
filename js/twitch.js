@@ -9,7 +9,7 @@ const params = {
 	},
 	url = 'https://id.twitch.tv/oauth2/authorize?' + $.param(params);
 $(function(){
-	if (window.location.hash.match(/access_token=(\w+)/)){
+	if (document.location.hash.match(/access_token=(\w+)/)){
 		const temp = parseFragment();
 		console.log(temp);
 	}else{
