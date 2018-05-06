@@ -11,7 +11,6 @@ const params = {
 let window.authed  = false;
 $(function(){
 	if(!authed){
-		window.location = url;
 		window.authed = true;
 	};
 });
