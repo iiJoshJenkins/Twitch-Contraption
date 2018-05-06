@@ -8,9 +8,7 @@ const params = {
 	scope : 'viewing_activity_read openid channel_subscriptions'
 },
       url = 'https://id.twitch.tv/oauth2/authorize?' + $.param(params);
-let window.authed  = false;
 $(function(){
-	if(!authed){
-		window.authed = true;
-	};
+	$('.auth-link').attr('href', url);
+	console.log(window);
 });
